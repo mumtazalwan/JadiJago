@@ -149,7 +149,7 @@ nav{
   max-width: auto;
   margin: 24px;
   padding: 6px 12px;
-  padding-left: 0 auto; /* Padding kiri untuk layar besar */
+  padding-left: 0 auto;
   padding-right: 0 auto; /* Padding kanan untuk layar besar */
   /* align-items: center; */
   justify-content: center;
