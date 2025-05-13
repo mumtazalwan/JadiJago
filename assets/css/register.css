@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 5%;
+}
+
+.icon-image {
+  width: 20%;
+  height: auto;
+}
+
+.register-section {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  width: 20%;
+  height: 20%;
+  gap: 10px;
+}
+
+.register-section h1 {
+  font-size: 30px;
+  font-weight: 600;
+  align-self: center;
+}
+
+.register-input-group input {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 8px 0;
+  padding-left: 12px;
+  width: 100%;
+}
+
+.register-input-group input::placeholder {
+  font-weight: bold;
+}
+
+.register-button {
+  background-color: #486284;
+  color: white;
+  border: none;
+  padding: 8px 21px;
+  font-size: 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  width: 100%;
+  align-self: center;
+  cursor: pointer;
+}
+
+.register-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.register-login a {
+  text-decoration: none;
+  color: #486284;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .register-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-image {
+    width: 50%;
+  }
+
+  .register-section {
+    width: 80%;
+  }
+}
