@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JadiJago</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-logo"><a href="#">JadiJago</a></div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        &#9776;
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Explore</a></li>
+        <li class="search-box">
+          <input type="text" placeholder="Search Course..." />
+          <button class="search-btn">
+            <img src="./assets/img/ic-search.svg" alt="" />
+          </button>
+        </li>
+        <li class="divider">|</li>
+        <li>
+          <a href="./pages/register.html">Register</a>
+        </li>
+        <li>
+          <a href="./pages/login.html">
+            <button class="login-btn">Login</button>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="container main">
+      <div class="image-placeholder"></div>
+      <div class="login-form">
+        <h2>Login</h2>
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <button class="continue-btn">Continue</button>
+        <p class="signup-text">
+          Don’t have account yet? <a href="#">Sign Up</a>
+        </p>
+      </div>
+    </main>
+  </body>
 </html>
