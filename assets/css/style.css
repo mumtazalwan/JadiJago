@@ -86,7 +86,111 @@ nav{
     cursor: pointer;
 }
 
+/* Ads Slider*/
+
+.ads-slider {
+  width: 100%;
+  max-height: 428px;
+  margin: 24px auto;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  position: relative;
+}
+
+.slider-container {
+  display: flex;
+  width: 300%;
+  animation: slideAds 12s infinite;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+@keyframes slideAds {
+  0%   { transform: translateX(0%); }
+  33%  { transform: translateX(-100%); }
+  66%  { transform: translateX(-200%); }
+  100% { transform: translateX(0%); }
+}
+
+/* Course Grid */
+
+.course{
+  padding: 24px;
+}
+
+.course .head-title{
+  font-weight: bold;
+  font-size: 32px;
+  margin: 24px 0;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(244px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.card-grid:hover {
+  transform: translateY(-4px);
+}
+
+.img-card {
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.img-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 10px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.rating {
+  font-size: 13px;
+  color: #777;
+  margin: 4px 0;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 14px;
+  color: #222;
+  margin-top: auto;
+}
+
 /* Responsive Navbar */
+
 @media (max-width: 768px) {
   .menu-toggle {
     display: contents;
@@ -126,5 +230,9 @@ nav{
 
   .search-box {
     display: none;
+  }
+
+  .ads-slider {
+    max-height:  320px;
   }
 }
