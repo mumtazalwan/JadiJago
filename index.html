@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JagaSiKecil</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JadiJago</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-    
+  <nav class="navbar">
+    <div class="nav-logo"><a href="#">JadiJago</a></div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Explore</a></li>
+      <li class="search-box">
+        <input type="text" placeholder="Search Course..." />
+           <button class="search-btn">
+                <img src="./assets/img/ic-search.svg" alt="">
+           </button>
+      </li>
+      <li class="divider">|</li>
+      <li><a href="#">Register</a></li>
+      <li><button class="login-btn">Login</button></li>
+    </ul>
+  </nav>
+
+  <script src="assets/js/navbar.js"></script>
 </body>
 </html>
