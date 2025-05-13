@@ -151,8 +151,6 @@ nav{
   padding: 6px 12px;
   padding-left: 0 auto;
   padding-right: 0 auto; /* Padding kanan untuk layar besar */
-  /* align-items: center; */
-  justify-content: center;
 }
 
 .footer-about,
@@ -166,10 +164,9 @@ nav{
 @media (min-width: 1024px) {
   .footer-container {
     flex-direction: row; /* Baris untuk layar besar */
-    gap: 12px; /* Jarak antar elemen */
+    gap: 20%; /* Jarak antar elemen */
   }
 }
-
 
 .footer h4 {
   font-size: 18px;
