@@ -10,12 +10,6 @@ body{
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 /* Header */
 nav{
     display: flex;
@@ -160,17 +154,6 @@ nav{
   font-weight: bold;
 }
 
-/* Footer */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.9rem;
-  padding: 1rem 0;
-  border-top: 1px solid #ccc;
-  flex-wrap: wrap;
-}
-
 .social-icons span {
   margin-left: 0.5rem;
   font-size: 1.2rem;
@@ -243,4 +226,77 @@ nav{
     flex-direction: column;
     gap: 0.5rem;
   }
+}
+
+.footer {
+  background-color: #486284; /* Warna utama */
+  color: #FFFFFF; /* Warna teks */
+  padding: 6px 12px; /* Padding untuk layar kecil */
+  padding-left: 24px; /* Padding kiri untuk layar besar */
+  padding-right: 24px; /* Padding kanan untuk layar besar */
+  padding-top: 8px; /* Padding atas */
+  padding-bottom: 6px; /* Padding bawah */
+  font-family: Plus Jakarta Sans, sans-serif;
+  gap: 8px; /* Jarak antar elemen */
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column; /* Kolom untuk layar kecil */
+  gap: auto; /* Jarak antar elemen */
+  max-width: auto;
+  margin: 24px;
+  padding: 6px 12px;
+  padding-left: 0 auto;
+  padding-right: 0 auto; /* Padding kanan untuk layar besar */
+}
+
+.footer-about,
+.footer-links,
+.footer-contact {
+  flex: 1;
+  margin: 10px;
+}
+
+/* Responsive Footer */
+@media (min-width: 1024px) {
+  .footer-container {
+    flex-direction: row; /* Baris untuk layar besar */
+    gap: 20%; /* Jarak antar elemen */
+  }
+}
+
+.footer h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+}
+
+.footer p,
+.footer a {
+  font-size: 14px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 5px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #FFFFFF;
+  border-top: 1px solid #FFFFFF;
+  padding-top: 10px;
 }
