@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JadiJago</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-logo"><a href="#">JadiJago</a></div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        &#9776;
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Explore</a></li>
+        <li class="search-box">
+          <input type="text" placeholder="Search Course..." />
+          <button class="search-btn">
+            <img src="./assets/img/ic-search.svg" alt="" />
+          </button>
+        </li>
+        <li class="divider">|</li>
+        <li>
+          <a href="./pages/register.html">Register</a>
+        </li>
+        <li>
+          <a href="./pages/login.html">
+            <button class="login-btn">Login</button>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="container main">
+      <div class="image-placeholder"></div>
+      <div class="login-form">
+        <h2>Login</h2>
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <button class="continue-btn">Continue</button>
+        <p class="signup-text">
+          Don’t have account yet? <a href="#">Sign Up</a>
+        </p>
+      </div>
+    </main>
+
+    <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h4>About JadiJago</h4>
+        <p>
+          JadiJago adalah platform pembelajaran online yang membantu Anda
+          menguasai berbagai keterampilan dengan mudah.
+        </p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Explore</a></li>
+          <li><a href="./pages/register.html">Register</a></li>
+          <li><a href="./pages/login.html">Login</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>Email: support@jadijago.com</p>
+        <p>Phone: +62 123 456 789</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 JadiJago. All rights reserved.</p>
+    </div>
+    </footer>
+
+  </body>
 </html>

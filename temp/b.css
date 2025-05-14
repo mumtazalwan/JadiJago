@@ -86,79 +86,6 @@ nav{
     cursor: pointer;
 }
 
-/* Login page */
-.main {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-  padding: 2rem 0;
-  flex-wrap: wrap;
-  min-height: 80vh;
-}
-
-.image-placeholder {
-  background-color: #ddd;
-  width: 100%;
-  max-width: 500px;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image-placeholder::before {
-  content: "🖼️";
-  font-size: 3rem;
-  color: #90a4ae;
-}
-
-.login-form {
-  flex: 1;
-  min-width: 300px;
-  max-width: 400px;
-}
-
-.login-form h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-
-.login-form input {
-  width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.continue-btn {
-  width: 100%;
-  padding: 0.75rem;
-  background-color: #4a6480;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-.signup-text {
-  margin-top: 1rem;
-  text-align: center;
-  color: #555;
-}
-
-.signup-text a {
-  color: #4a6480;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.social-icons span {
-  margin-left: 0.5rem;
-  font-size: 1.2rem;
-}
-
 /* Responsive Navbar */
 @media (max-width: 768px) {
   .menu-toggle {
@@ -200,34 +127,9 @@ nav{
   .search-box {
     display: none;
   }
-
-  /* Login Page */
-  .main {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-
-  nav input {
-    width: 100%;
-    max-width: 200px;
-  }
-
-  .auth {
-    flex-direction: row;
-  }
-
-  .footer {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
 }
 
+/* Footer Styling */
 .footer {
   background-color: #486284; /* Warna utama */
   color: #FFFFFF; /* Warna teks */
